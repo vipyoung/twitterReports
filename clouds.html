@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>jQCloud Example</title>
+        <link rel="stylesheet" type="text/css" href="http://scdev5.qcri.org/sabbar/libs/jqcloud/jqcloud.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://scdev5.qcri.org/sabbar/libs/jqcloud/jqcloud-1.0.2.js"></script> 
+   <script type="text/javascript">
+      /*!
+       * Create an array of word objects, each representing a word in the cloud
+       */
+      var word_array = [
+// You need to copy past here the output of generate_cloud_data.py one day at a time. 
+{text: "alaraby_ar", weight: 31},
+{text: "Adel__Almalki", weight: 25},
+{text: "SaadAbedine", weight: 23},
+{text: "AJABreaking", weight: 22},
+{text: "AJArabic", weight: 18},
+{text: "saeedthabit", weight: 17},
+{text: "Adel16624846", weight: 16},
+{text: "mak00017", weight: 16},
+{text: "HamidHadeed", weight: 15},
+{text: "AhmHashim", weight: 15},
+{text: "Almohannadiibra", weight: 13},
+{text: "alwaaaleeed", weight: 13},
+{text: "IssaSAlHitmi", weight: 12},
+{text: "hamadbinessa", weight: 12},
+{text: "fwau71", weight: 11},
+{text: "dalialsaidd", weight: 11},
+{text: "drtomrto1", weight: 11},
+{text: "burnodo", weight: 10},
+{text: "rancho4lyfe", weight: 10},
+{text: "TR7AL_QTR", weight: 10},
+{text: "muslimblogspot", weight: 10},
+{text: "mohammad_nemer2", weight: 9},
+{text: "moha__barakat", weight: 9},
+{text: "hamdibokari", weight: 8},
+{text: "MOHAGOOSAAR", weight: 8},
+{text: "mikeymikedoha", weight: 8},
+{text: "AlamHassan11", weight: 8},
+{text: "Hamadqtr71", weight: 7},
+{text: "ajmubasher", weight: 7},
+{text: "ahah_20a", weight: 7},
+{text: "almojahed_m", weight: 6},
+{text: "ZMeryame", weight: 6},
+{text: "EhabKair", weight: 6},
+{text: "omar300fg7", weight: 6},
+{text: "qtr9992", weight: 6},
+{text: "JohnJplnd", weight: 6},
+{text: "granddoor", weight: 6},
+{text: "WaqarKhan_123", weight: 6},
+{text: "pnagency", weight: 6},
+{text: "AJEnglish", weight: 6},
+{text: "ZCelemin", weight: 5},
+{text: "alsharq_portal", weight: 5},
+{text: "VB5AKtOZdkWxf6L", weight: 5},
+{text: "SeveZubiri", weight: 5},
+{text: "M9L2NvRNshojZ3H", weight: 5},
+{text: "SaolDara", weight: 5},
+{text: "MhmadMarwa", weight: 5},
+{text: "jazzed3235", weight: 5},
+{text: "AbdulazizElbeik", weight: 5},
+{text: "jeffinchiangma2", weight: 5},
+{text: "mosad43211", weight: 4},
+{text: "QTRaldosari88", weight: 4},
+{text: "PhilDeCarolis", weight: 4},
+{text: "the_ghost_3", weight: 4},
+{text: "alkaabi4591", weight: 4},
+{text: "aljoker_oo7", weight: 4},
+{text: "newsdeduper", weight: 4},
+{text: "desertsurvayor", weight: 4},
+{text: "hanaansyrya", weight: 4},
+{text: "NVZOk8mUCapea0D", weight: 4},
+{text: "aalsubaie___", weight: 4},
+{text: "Rero_Ooj", weight: 4},
+{text: "ComeMouss", weight: 4},
+{text: "am_citizen", weight: 4},
+{text: "05026a123s", weight: 4},
+{text: "AJENews", weight: 4},
+{text: "elbasiony_osama", weight: 4},
+
+          // ...as many words as you want
+      ];
+
+      $(function() {
+        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+        $("#example").jQCloud(word_array, {shape:'elliptical'});
+      });
+    </script>
+  </head>
+  <body>
+    <!-- You should explicitly specify the dimensions of the container element -->
+    <div id="example" style="width: 1200px; height: 600px;"></div>
+  </body>
+</html>
