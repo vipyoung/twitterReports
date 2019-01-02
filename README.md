@@ -8,7 +8,7 @@ Use twitter streaming api to collect tweets about hashtags, etc.
 
 ## Historical
 Use Twarc to collect historical data about tweets posted in the past.
-Link: https://github.com/docnow/twarc
+Link: [https://github.com/docnow/twarc)](https://github.com/docnow/twarc)
 
 **Example**:
 
@@ -41,19 +41,20 @@ Run the following code:
 You can replace *hourly* by *daily*
 
 The output is something like: 
-- 2018-03-27 18,105
-- 2018-03-27 19,1559
-- 2018-03-27 20,1598
-- 2018-03-27 21,1546
-- 2018-03-27 22,1115
-- 2018-03-27 23,795
-- 2018-03-28 00,773
-- 2018-03-28 01,622
-- 2018-03-28 02,555
-- 2018-03-28 03,603
-- 2018-03-28 04,670
-- 2018-03-28 05,59
-
+```
+2018-03-27 18,105
+2018-03-27 19,1559
+2018-03-27 20,1598
+2018-03-27 21,1546
+2018-03-27 22,1115
+2018-03-27 23,795
+2018-03-28 00,773
+2018-03-28 01,622
+2018-03-28 02,555
+2018-03-28 03,603
+2018-03-28 04,670
+2018-03-28 05,59
+```
 
 ## Hashtags:
 There's a code to generate data for the clouds.
@@ -64,6 +65,7 @@ There's a code to generate data for the clouds.
 Where 50 is the number of hashtags you want to generate. 
 The output is the  most frequent hashtags with their weights per day. 
 
+```
 =================== 2018-03-27
 {text: "Skripal", weight: 1364},
 {text: "Russia", weight: 228},
@@ -86,9 +88,10 @@ The output is the  most frequent hashtags with their weights per day.
 {text: "Novichok", weight: 38},
 {text: "Salisbury", weight: 31},
 {text: "SARUM_HOAX", weight: 24},
-
+```
 2. Copy past the hashtags of one day, say 2018-03-27, into `word_array` in `clouds.html`
 
 3. Run: `firefox clouds.html` and make a screenshot of the beautiful output.
 
+![alt text](data/figs/cloud.png "Hashtag cloud")
 
